@@ -9,7 +9,7 @@ function asignarTextoAElemento(tag,texto) {
 }
 function generarNumeroSecreto() {
     let num = Math.floor(Math.random()*numeroMax)+1;
-    if(listaNumerosSorteados.length() == numeroMax) {
+    if(listaNumerosSorteados.length == numeroMax) {
         asignarTextoAElemento('p',"Ya se sortearon todos los numeros");
     } else {
         if(listaNumerosSorteados.includes(num)) {
